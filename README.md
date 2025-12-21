@@ -1,7 +1,38 @@
 # Hanji Hokkien Input Method 番薯閩南語輸入方案 番薯闽南语输入方案
 
-A Hokkien (Southern Min) input schema made with [RIME](https://rime.im/), based on the orthography of the [*Dictionary of Frequently-Used Taiwan Taigi*](https://sutian.moe.edu.tw/zh-hant/). This project supports inputting Hokkien Han characters using [Tâi-uân Lô-má-jī Phing-im Hong-àn](https://en.wikipedia.org/wiki/T%C3%A2i-u%C3%A2n_L%C3%B4-m%C3%A1-j%C4%AB_Phing-im_Hong-%C3%A0n) (Hanji TL), [Pe̍h-ōe-jī](https://en.wikipedia.org/wiki/Pe%CC%8Dh-%C5%8De-j%C4%AB) (Hanji POJ) and [Bbánlám Uē Pìngyīm Hōng'àn](https://en.wikipedia.org/wiki/Bb%C3%A1nl%C3%A1m_p%C3%ACngy%C4%ABm) (Hanji BP). Automatic Traditional-Simplified Chinese conversion is handled by RIME’s built-in tools.
+A Hokkien (Southern Min) input schema made with [RIME](https://rime.im/), based on the orthography of the [*Dictionary of Frequently-Used Taiwanese Taigi*](https://sutian.moe.edu.tw/zh-hant/). This project supports inputting Hokkien Han characters using [Tâi-uân Lô-má-jī Phing-im Hong-àn](https://en.wikipedia.org/wiki/T%C3%A2i-u%C3%A2n_L%C3%B4-m%C3%A1-j%C4%AB_Phing-im_Hong-%C3%A0n) (Hanji TL), [Pe̍h-ōe-jī](https://en.wikipedia.org/wiki/Pe%CC%8Dh-%C5%8De-j%C4%AB) (Hanji POJ) and [Bbánlám Uē Pìngyīm Hōng'àn](https://en.wikipedia.org/wiki/Bb%C3%A1nl%C3%A1m_p%C3%ACngy%C4%ABm) (Hanji BP). Automatic Traditional-Simplified Chinese conversion is handled by RIME’s built-in tools.
 
 一個使用[RIME](https://rime.im/)開發的基於[《臺灣台語常用詞辭典》](https://sutian.moe.edu.tw/zh-hant/)用字的閩南語輸入方案。本項目支援使用[臺灣台語羅馬字拼音方案](https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E5%8F%B0%E8%AA%9E%E7%BE%85%E9%A6%AC%E5%AD%97%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88)（番薯臺羅）、[白話字](https://zh.wikipedia.org/wiki/%E7%99%BD%E8%A9%B1%E5%AD%97)（番薯白話字）和[閩南話拼音方案](https://zh.wikipedia.org/wiki/%E9%96%A9%E5%8D%97%E8%A9%B1%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88)（番薯閩拼）輸入漢字。使用RIME內建工具自動支援簡繁轉換。
 
 一个使用[RIME](https://rime.im/)开发的基于[《台湾台语常用词辞典》](https://sutian.moe.edu.tw/zh-hant/)用字的闽南语输入方案。本项目支持使用[台湾台语罗马字拼音方案](https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E5%8F%B0%E8%AA%9E%E7%BE%85%E9%A6%AC%E5%AD%97%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88)（番薯台罗）、[白话字](https://zh.wikipedia.org/wiki/%E7%99%BD%E8%A9%B1%E5%AD%97)（番薯白话字）和[闽南话拼音方案](https://zh.wikipedia.org/wiki/%E9%96%A9%E5%8D%97%E8%A9%B1%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88)（番薯闽拼）输入汉字。使用RIME内置工具自动支持简繁转换。
+
+## 安装
+
+Please download and install RIME at first.
+
+請先[下載並安裝RIME](https://rime.im/download/)。
+
+请先[下载并安装RIME](https://rime.im/download/)。
+
+### 方法1
+
+Open **Input Method Settings** > **Schema Selection** > **Get more input schemas…** and enter: `https://github.com/NautilusCHN/HanjiHokkienInputMethod.git`. Once the download is complete, ensure that the schemas is selected in the Schema Selection menu.
+
+開啟“輸入法設定”—“方案選單設定”—“獲取更多輸入方案…”並輸入：`https://github.com/NautilusCHN/HanjiHokkienInputMethod.git`。下載完成後確認方案選單設定中勾選了你需要的輸入方案。
+
+打开“输入法设定”—“方案选单设定”—“获取更多输入方案…”并输入：`https://github.com/NautilusCHN/HanjiHokkienInputMethod.git`。下载完成后确认方案选单设定中勾选了你需要的输入方案。
+
+
+### 方法2
+
+Download the dictionary file`hanji.dict.yaml`and your preferred schema file`hanji_*.schema.yaml` to the user folder of RIME`%AppData%\Rime`. Once the download is complete, ensure that the schemas is selected in the Schema Selection menu.
+
+下載詞典檔案`hanji.dict.yaml`和你需要的輸入方案檔案`hanji_*.schema.yaml`至RIME的使用者資料夾`%AppData%\Rime`。下載完成後確認方案選單設定中勾選了你需要的輸入方案。
+
+下载词典文件`hanji.dict.yaml`和你需要的输入方案文件`hanji_*.schema.yaml`至RIME的用户文件夹`%AppData%\Rime`。下载完成后确认方案选单设定中勾选了你需要的输入方案。
+
+## Source of Dictionary Data 詞典資料來源 词典数据来源
+
+- *Dictionary of Frequently-Used Taiwanese Taigi* 《臺灣台語常用詞辭典》 《台湾台语常用词辞典》
+- *Dictionary of Southern Min Dialect*《閩南方言大詞典》《闽南方言大词典》
+- Myself 自製 自制
