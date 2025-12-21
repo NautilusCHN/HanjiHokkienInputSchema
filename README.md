@@ -1,4 +1,4 @@
-# Hanji Hokkien Input Method 番薯閩南語輸入方案 番薯闽南语输入方案
+# Hanji Hokkien Input Schema 番薯閩南語輸入方案 番薯闽南语输入方案
 
 A Hokkien (Southern Min) input schema made with [RIME](https://rime.im/), based on the orthography of the [*Dictionary of Frequently-Used Taiwanese Taigi*](https://sutian.moe.edu.tw/zh-hant/). This project supports inputting Hokkien Han characters using [Tâi-uân Lô-má-jī Phing-im Hong-àn](https://en.wikipedia.org/wiki/T%C3%A2i-u%C3%A2n_L%C3%B4-m%C3%A1-j%C4%AB_Phing-im_Hong-%C3%A0n) (Hanji TL), [Pe̍h-ōe-jī](https://en.wikipedia.org/wiki/Pe%CC%8Dh-%C5%8De-j%C4%AB) (Hanji POJ) and [Bbánlám Uē Pìngyīm Hōng'àn](https://en.wikipedia.org/wiki/Bb%C3%A1nl%C3%A1m_p%C3%ACngy%C4%ABm) (Hanji BP). Automatic Traditional-Simplified Chinese conversion is handled by RIME’s built-in tools.
 
@@ -16,7 +16,7 @@ Please [download and install RIME](https://rime.im/download/) at first.
 
 ### 方法1
 
-Open **Input Method Settings** > **Schema Selection** > **Get more input schemas…** and enter: `https://github.com/NautilusCHN/HanjiHokkienInputMethod.git`. Once the download is complete, ensure that the schemas is selected in the Schema Selection menu.
+Open **Input Method Settings** > **Schema Selection** > **Get more input schemata…** and enter: `https://github.com/NautilusCHN/HanjiHokkienInputMethod.git`. Once the download is complete, ensure that the schemata is selected in the Schema Selection menu.
 
 開啟“輸入法設定”—“方案選單設定”—“獲取更多輸入方案…”並輸入：`https://github.com/NautilusCHN/HanjiHokkienInputMethod.git`。下載完成後確認方案選單設定中勾選了你需要的輸入方案。
 
@@ -25,7 +25,7 @@ Open **Input Method Settings** > **Schema Selection** > **Get more input schemas
 
 ### 方法2
 
-Download the dictionary file`hanji.dict.yaml`and your preferred schema file`hanji_*.schema.yaml` to the user folder of RIME`%AppData%\Rime`. Once the download is complete, ensure that the schemas is selected in the Schema Selection menu.
+Download the dictionary file`hanji.dict.yaml`and your preferred schema file`hanji_*.schema.yaml` to the user folder of RIME`%AppData%\Rime`. Once the download is complete, ensure that the schemata is selected in the Schema Selection menu.
 
 下載詞典檔案`hanji.dict.yaml`和你需要的輸入方案檔案`hanji_*.schema.yaml`至RIME的使用者資料夾`%AppData%\Rime`。下載完成後確認方案選單設定中勾選了你需要的輸入方案。
 
