@@ -8,7 +8,7 @@ A Hokkien (Southern Min) input schema made with [RIME](https://rime.im/), based 
 
 ## 安装
 
-Please download and install RIME at first.
+Please [download and install RIME](https://rime.im/download/) at first.
 
 請先[下載並安裝RIME](https://rime.im/download/)。
 
@@ -33,6 +33,8 @@ Download the dictionary file`hanji.dict.yaml`and your preferred schema file`hanj
 
 ## Source of Dictionary Data 詞典資料來源 词典数据来源
 
-- *Dictionary of Frequently-Used Taiwanese Taigi* 《臺灣台語常用詞辭典》 《台湾台语常用词辞典》
+- *Dictionary of Frequently-Used Taiwanese Taigi* 《臺灣台語常用詞辭典》 《台湾台语常用词辞典》[^1]
 - *Dictionary of Southern Min Dialect*《閩南方言大詞典》《闽南方言大词典》
 - Myself 自製 自制
+
+[^1]: License 授權條款 许可证: CC BY-ND 3.0 TW ([Engilish](https://creativecommons.org/licenses/by-nd/3.0/tw/deed.en) [繁體中文](https://creativecommons.org/licenses/by-nd/3.0/tw/deed.zh-hant) [简体中文](https://creativecommons.org/licenses/by-nd/3.0/tw/deed.zh-hans))
