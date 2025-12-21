@@ -1,0 +1,113 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: hanji_poj
+  name: 番薯白話字／番薯白话字
+  version: "0.1"
+  author:
+    - NautilusCHN
+  description: |
+    用白話字輸入《臺灣台語常用詞辭典》閩南語漢字。按 ` 啟用筆畫反查功能。
+    用白话字输入《台湾台语常用词辞典》闽南语汉字。按 ` 启用笔画反查功能。
+
+    按 nn 或 x 輸入 ⁿ ，按 oo 或 oq 輸入 o͘ 。
+    按 nn 或 x 输入 ⁿ ，按 oo 或 oq 输入 o͘ 。
+  dependencies:
+    - stroke
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - echo_translator
+    - punct_translator
+    - reverse_lookup_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: xutsqponmlkjihgecba
+  finals: xutqponmkihgea
+  delimiter: " '"
+  algebra:
+    # 泉州腔
+    - derive/ik$/iak/
+    # 臺羅轉白話字
+    - xform/^ts/ch/
+    - xform/u([ae])/o$1/
+    - xform/i(k|ng)/e$1/
+    - xform/([aio])r/$1/
+    - xform/ee/e/
+    # 特殊字符
+    - derive/nn$/x/
+    - derive/oo/oq/
+    # 糾錯
+    - derive/([aeo])ng$/$1gn/
+    # 簡拼
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([ptk]h).+$/$1/
+    - abbrev/^(ng|chh|ch).+$/$1/
+
+translator:
+  dictionary: hanji
+  prism: hanji_poj
+  preedit_format:
+    - xform/x/ⁿ/
+    - xform/nn/ⁿ/
+    - xform/oq/o͘/
+    - xform/oo/o͘/
+
+reverse_lookup:
+  dictionary: stroke
+  enable_completion: true
+  prefix: "`"
+  suffix: "'"
+  tips: 〔筆畫｜笔画〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+  comment_format:
+    - xform/ts/ch/
+    - xform/u([ae])/o$1/
+    - xform/i(k|ng)/e$1/
+    - xform/([aio])r/$1/
+    - xform/nn/ⁿ/
+    - xform/oq/o͘/
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
+    reverse_lookup: "`[a-z]*'?$"

@@ -1,0 +1,107 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: hanji_bp
+  name: 番薯閩拼／番薯闽拼
+  version: "0.1"
+  author:
+    - NautilusCHN
+  description: |
+    用閩南話拼音方案輸入《臺灣台語常用詞辭典》閩南語漢字。按 ` 啟用筆畫反查功能。
+    用闽南话拼音方案输入《台湾台语常用词辞典》闽南语汉字。按 ` 启用笔画反查功能。
+  dependencies:
+    - stroke
+
+switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．， ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - echo_translator
+    - punct_translator
+    - reverse_lookup_translator
+    - script_translator
+  filters:
+    - simplifier
+    - uniquifier
+
+speller:
+  alphabet: zywutsponmlkihgedcba
+  finals: utponmkihgea
+  delimiter: " '"
+  algebra:
+    # 泉州腔
+    - derive/ik/iak/
+    # 臺羅轉閩拼
+    - xform/^b/bb/
+    - xform/^p(?!h)/b/
+    - xform/^ph/p/
+    - xform/^g/gg/
+    - xform/^k(?!h)/g/
+    - xform/^kh/k/
+    - xform/^ts(?!h)/z/
+    - xform/^tsh/c/
+    - xform/^t(?!h)/d/
+    - xform/^th/t/
+    - xform/^n/ln/
+    - xform/^j/zz/
+    - xform/au/ao/
+    - xform/^i/y/
+    - xform/^u/w/
+    - xform/([aio])r/$1/
+    - xform/ee/e/
+    - xform/([aeiou]+)nn/n$1/
+    # 糾錯
+    - derive/([aio])ng$/$1gn/
+    # 簡拼
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^(zz|ln|l|ggn|gg|bbn|bb).+$/$1/
+
+translator:
+  dictionary: hanji
+  prism: hanji_bp
+
+reverse_lookup:
+  dictionary: stroke
+  enable_completion: true
+  prefix: "`"
+  suffix: "'"
+  tips: 〔筆畫｜笔画〕
+  preedit_format:
+    - xlit/hspnz/一丨丿丶乙/
+
+punctuator:
+  import_preset: symbols
+
+key_binder:
+  import_preset: default
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
+    reverse_lookup: "`[a-z]*'?$"
