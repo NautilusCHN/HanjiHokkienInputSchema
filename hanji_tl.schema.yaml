@@ -4,7 +4,7 @@
 schema:
   schema_id: hanji_tl
   name: 番薯臺羅／番薯台罗
-  version: "0.1"
+  version: "0.2"
   author:
     - NautilusCHN
   description: |
@@ -56,6 +56,8 @@ speller:
   algebra:
     # 泉州腔
     - derive/ik$/iak/
+    # 入母并柳母
+    - derive/^j/l/
     # 糾錯
     - derive/([aio])ng$/$1gn/
     - derive/^ts/c/

@@ -4,7 +4,7 @@
 schema:
   schema_id: hanji_bp
   name: 番薯閩拼／番薯闽拼
-  version: "0.1"
+  version: "0.2"
   author:
     - NautilusCHN
   description: |
@@ -55,7 +55,9 @@ speller:
   delimiter: " '"
   algebra:
     # 泉州腔
-    - derive/ik/iak/
+    - derive/ik$/iak/
+    # 入母并柳母
+    - derive/^zz/l/
     # 臺羅轉閩拼
     - xform/^b/bb/
     - xform/^p(?!h)/b/
@@ -72,7 +74,7 @@ speller:
     - xform/au/ao/
     - xform/^i/y/
     - xform/^u/w/
-    - xform/([aio])r/$1/
+    - xform/([io])r/$1/
     - xform/ee/e/
     - xform/([aeiou]+)nn/n$1/
     # 糾錯

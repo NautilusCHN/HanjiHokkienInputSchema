@@ -6,7 +6,13 @@ A Hokkien (Southern Min) input schema made with [RIME](https://rime.im/), based 
 
 一个使用[RIME](https://rime.im/)开发的基于[《台湾台语常用词辞典》](https://sutian.moe.edu.tw/zh-hant/)用字的闽南语输入方案。本项目支持使用[台湾台语罗马字拼音方案](https://zh.wikipedia.org/wiki/%E8%87%BA%E7%81%A3%E5%8F%B0%E8%AA%9E%E7%BE%85%E9%A6%AC%E5%AD%97%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88)（番薯台罗）、[白话字](https://zh.wikipedia.org/wiki/%E7%99%BD%E8%A9%B1%E5%AD%97)（番薯白话字）和[闽南话拼音方案](https://zh.wikipedia.org/wiki/%E9%96%A9%E5%8D%97%E8%A9%B1%E6%8B%BC%E9%9F%B3%E6%96%B9%E6%A1%88)（番薯闽拼）输入汉字。使用RIME内置工具自动支持简繁转换。
 
-## 安装
+*Note: Hanji TL UNI, which unified `ir` & `or` into `i` & `o`, is a variation of Hanji TL. It is suitable for Coastal Quanzhou dialect speaker.*
+
+*注：番薯臺羅UNI為番薯臺羅變種，統一`ir`, `or`為`i`, `o`，適合泉州海口腔使用者。*
+
+*注：番薯台罗UNI为番薯台罗变种，统一`ir`, `or`为`i`, `o`，适合泉州海口腔使用者。*
+
+## Install 安装
 
 Please [download and install RIME](https://rime.im/download/) at first.
 
@@ -14,27 +20,11 @@ Please [download and install RIME](https://rime.im/download/) at first.
 
 请先[下载并安装RIME](https://rime.im/download/)。
 
-### 方法1
+## Source of Dictionary Data 詞典資料來源/词典数据来源
 
-Open **Input Method Settings** > **Schema Selection** > **Get more input schemata…** and enter: `https://github.com/NautilusCHN/HanjiHokkienInputMethod.git`. Once the download is complete, ensure that the schemata is selected in the Schema Selection menu.
+- *Dictionary of Frequently-Used Taiwanese Taigi* /《臺灣台語常用詞辭典》/《台湾台语常用词辞典》[^1]
+- *Mǐnnan Fangyan Dacidian* /《閩南方言大詞典》/《闽南方言大词典》
+- *Putonghua Minnan Fangyan Cidian* /《普通話閩南方言詞典》/《普通话闽南方言词典》
+- Self-made/自製/自制
 
-開啟“輸入法設定”—“方案選單設定”—“獲取更多輸入方案…”並輸入：`https://github.com/NautilusCHN/HanjiHokkienInputMethod.git`。下載完成後確認方案選單設定中勾選了你需要的輸入方案。
-
-打开“输入法设定”—“方案选单设定”—“获取更多输入方案…”并输入：`https://github.com/NautilusCHN/HanjiHokkienInputMethod.git`。下载完成后确认方案选单设定中勾选了你需要的输入方案。
-
-
-### 方法2
-
-Download the dictionary file`hanji.dict.yaml`and your preferred schema file`hanji_*.schema.yaml` to the user folder of RIME`%AppData%\Rime`. Once the download is complete, ensure that the schemata is selected in the Schema Selection menu.
-
-下載詞典檔案`hanji.dict.yaml`和你需要的輸入方案檔案`hanji_*.schema.yaml`至RIME的使用者資料夾`%AppData%\Rime`。下載完成後確認方案選單設定中勾選了你需要的輸入方案。
-
-下载词典文件`hanji.dict.yaml`和你需要的输入方案文件`hanji_*.schema.yaml`至RIME的用户文件夹`%AppData%\Rime`。下载完成后确认方案选单设定中勾选了你需要的输入方案。
-
-## Source of Dictionary Data 詞典資料來源 词典数据来源
-
-- *Dictionary of Frequently-Used Taiwanese Taigi* 《臺灣台語常用詞辭典》 《台湾台语常用词辞典》[^1]
-- *Dictionary of Southern Min Dialect*《閩南方言大詞典》《闽南方言大词典》
-- Myself 自製 自制
-
-[^1]: License 授權條款 许可证: CC BY-ND 3.0 TW ([Engilish](https://creativecommons.org/licenses/by-nd/3.0/tw/deed.en) [繁體中文](https://creativecommons.org/licenses/by-nd/3.0/tw/deed.zh-hant) [简体中文](https://creativecommons.org/licenses/by-nd/3.0/tw/deed.zh-hans))
+[^1]: License/授權條款/许可证: [CC BY-ND 3.0 TW](https://creativecommons.org/licenses/by-nd/3.0/tw/)
