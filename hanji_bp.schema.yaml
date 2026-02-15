@@ -4,7 +4,7 @@
 schema:
   schema_id: hanji_bp
   name: 番薯閩拼／番薯闽拼
-  version: "0.2"
+  version: "0.3"
   author:
     - NautilusCHN
   description: |

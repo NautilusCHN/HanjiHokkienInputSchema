@@ -23,8 +23,9 @@ Please [download and install RIME](https://rime.im/download/) at first.
 ## Source of Dictionary Data 詞典資料來源/词典数据来源
 
 - *Dictionary of Frequently-Used Taiwanese Taigi* /《臺灣台語常用詞辭典》/《台湾台语常用词辞典》[^1]
-- *Mǐnnan Fangyan Dacidian* /《閩南方言大詞典》/《闽南方言大词典》
-- *Putonghua Minnan Fangyan Cidian* /《普通話閩南方言詞典》/《普通话闽南方言词典》
+- *Dictionary of Southern Min Dialect (Minnan Fangyan Da Cidian)* /《閩南方言大詞典》/《闽南方言大词典》
+- *Mandarin-Southern Min Dialect Dictionary (Putonghua Minnan Fangyan Cidian)* /《普通話閩南方言詞典》/《普通话闽南方言词典》
+- *Dictionary of Southern Min Dialect Idioms (Minnan Fangyan Suyu Dacidian)* /《閩南方言俗語大詞典》/《闽南方言俗语大词典》
 - Self-made/自製/自制
 
 [^1]: License/授權條款/许可证: [CC BY-ND 3.0 TW](https://creativecommons.org/licenses/by-nd/3.0/tw/)
